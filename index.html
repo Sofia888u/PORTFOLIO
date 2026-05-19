@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saphya Oulhaj Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS dyalyy (stayl.css) -->
+    <link rel="stylesheet" href="stayl.css">
+
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Configuration (Palette Purple) -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkbg: '#1E1C2F',      
+                        cardbg: '#2D1E36',      
+                        accent: '#3E0866',      
+                        highlight: '#501A5E',   
+                        textmain: '#F8FAFC',    
+                        textmuted: '#CBD5E1',   
+                        yearcol: '#a78bfa',     
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-darkbg font-sans antialiased selection:bg-highlight selection:text-white">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 px-6 md:px-12 bg-transparent">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold tracking-wider text-textmain">home<span class="text-highlight">.</span></a>
+            <div class="hidden md:flex gap-8 text-sm font-medium">
+                <a href="#home" class="hover:text-highlight transition-colors">Home</a>
+                <a href="#skills" class="hover:text-highlight transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-highlight transition-colors text-yearcol font-semibold">Projects</a>
+                <a href="#education" class="hover:text-highlight transition-colors">Education</a>
+                <a href="#certifications" class="hover:text-highlight transition-colors">Certifications</a>
+                <a href="#contact" class="hover:text-highlight transition-colors">Contact</a>
+            </div>
+            <button class="md:hidden text-textmain text-xl"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex flex-col justify-center pt-24 pb-12 px-6 relative overflow-hidden">
+        
+        <div class="absolute top-20 left-10 w-72 h-72 bg-accent rounded-full mix-blend-multiply filter blur-[100px] opacity-40 animate-blob"></div>
+        <div class="absolute bottom-20 right-10 w-72 h-72 bg-highlight rounded-full mix-blend-multiply filter blur-[100px] opacity-40 animate-blob animation-delay-2000"></div>
+
+        <!-- "Welcome" Centré f-lwst dlfo9 -->
+        <div class="w-full text-center z-20 mb-10 fade-in-up mt-10">
+            <p class="text-highlight font-bold tracking-[0.15em] uppercase text-sm inline-block">
+                WELCOME TO MY PORTFOLIO
+            </p>
+        </div>
+
+        <!-- my info : Smiya w l Bio  -->
+        <div class="max-w-6xl mx-auto w-full z-10 flex">
+            <div class="max-w-3xl text-left fade-in-up">
+                
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 text-textmain leading-tight">
+                    Hi, I'm <br class="hidden md:block"/><span class="text-gradient">Saphya Oulhaj</span>
+                </h1>
+                
+                <!-- bio -->
+                <h2 class="text-xl md:text-2xl text-textmuted mb-8 font-light">
+                    1st-Year IT Student | Seeking Observation Internship
+                </h2>
+                
+                <p class="text-base md:text-lg text-textmuted mb-10 max-w-2xl leading-relaxed">
+                    Passionate about technology and data, I am currently learning the core basics of programming and software development. I am looking for a <strong class="text-white font-semibold border-b border-highlight pb-1">short-term observation internship</strong> to take my first steps into the IT industry, learn from experienced professionals, and understand how a technical team operates.
+                </p>
+                
+                <div class="flex flex-wrap justify-start gap-4">
+                    <a href="#contact" class="px-8 py-3 bg-accent hover:bg-highlight text-white rounded-full font-medium transition-all duration-300 shadow-[0_0_15px_rgba(62,8,102,0.5)] transform hover:-translate-y-1">
+                        Let's Connect
+                    </a>
+                    <a href="#certifications" class="px-8 py-3 bg-transparent border border-highlight hover:bg-cardbg text-white rounded-full font-medium transition-all duration-300">
+                        View My Certificates
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-6 border-t border-highlight/10 bg-[#251f38]/30">
+        <div class="max-w-5xl mx-auto">
+            <h3 class="text-3xl font-bold mb-12 text-center text-textmain fade-in-up flex items-center justify-center gap-3">
+                <i class="fas fa-code text-highlight"></i> Technical Skills
+            </h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <div class="glass-card p-6 rounded-2xl fade-in-up">
+                    <h4 class="text-lg font-semibold mb-6 border-b border-highlight/30 pb-2">Programming & Data</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-accent/80 px-3 py-1.5 rounded-md text-sm text-white">Python</span>
+                        <span class="bg-accent/30 px-3 py-1.5 rounded-md text-sm border border-accent">Pandas</span>
+                        <span class="bg-accent/30 px-3 py-1.5 rounded-md text-sm border border-accent">Numpy</span>
+                        <span class="bg-accent/30 px-3 py-1.5 rounded-md text-sm border border-accent">Matplotlib</span>
+                        <span class="bg-accent/80 px-3 py-1.5 rounded-md text-sm text-white">C</span>
+                        <span class="bg-accent/80 px-3 py-1.5 rounded-md text-sm text-white">Java</span>
+                        <span class="bg-accent/80 px-3 py-1.5 rounded-md text-sm text-white">SQL</span>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl fade-in-up" style="transition-delay: 100ms;">
+                    <h4 class="text-lg font-semibold mb-6 border-b border-highlight/30 pb-2">Web Development</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-accent/80 px-3 py-1.5 rounded-md text-sm text-white">HTML</span>
+                        <span class="bg-accent/80 px-3 py-1.5 rounded-md text-sm text-white">CSS</span>
+                        <span class="bg-accent/80 px-3 py-1.5 rounded-md text-sm text-white">JavaScript</span>
+                        <span class="bg-accent/30 px-3 py-1.5 rounded-md text-sm border border-accent">React.js</span>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl fade-in-up" style="transition-delay: 200ms;">
+                    <h4 class="text-lg font-semibold mb-6 border-b border-highlight/30 pb-2">Tools & Frameworks</h4>
+                    <ul class="space-y-3 text-textmuted text-sm">
+                        <li class="flex items-center gap-3"><i class="fab fa-github text-highlight w-5 text-center text-lg"></i> GitHub</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-code text-highlight w-5 text-center text-lg"></i> VS Code</li>
+                        <li class="flex items-center gap-3"><i class="fab fa-ubuntu text-highlight w-5 text-center text-lg"></i> Ubuntu</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-cubes text-highlight w-5 text-center text-lg"></i> Google Colab</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-6 border-t border-highlight/10 bg-[#1E1C2F]">
+        <div class="max-w-5xl mx-auto">
+            <h3 class="text-3xl font-bold mb-12 text-center text-textmain fade-in-up flex items-center justify-center gap-3">
+                <i class="fas fa-laptop-code text-highlight"></i> Featured Projects
+            </h3>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <!-- Nova Task Project Card -->
+                <div class="glass-card rounded-2xl overflow-hidden fade-in-up group flex flex-col h-full shadow-lg">
+                    <!-- Project Image -->
+                    <div class="h-48 overflow-hidden relative border-b border-highlight/30">
+                        <div class="absolute inset-0 bg-accent/20 group-hover:bg-transparent transition-all duration-500 z-10"></div>
+                        <!-- screen dyal website -->
+                        <img src="nova-task.png" alt="Nova Task Productivity App" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    </div>
+
+                    <!-- Project Content -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex justify-between items-start mb-2">
+                            <h4 class="text-xl font-bold text-textmain group-hover:text-yearcol transition-colors">Nova Task</h4>
+                            <span class="px-2 py-1 bg-highlight/30 text-yearcol text-xs rounded border border-highlight/50">App</span>
+                        </div>
+                        
+                        <p class="text-sm text-textmuted mb-5 flex-grow leading-relaxed">
+                            A modern, space-themed productivity web application. Features real-time progress tracking, persistent data via LocalStorage, and a custom PDF export functionality for offline mission reports.
+                        </p>
+
+                        <!-- Tech Stack Tags -->
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-accent/30 px-2 py-1 rounded text-xs border border-accent text-textmuted">JavaScript</span>
+                            <span class="bg-accent/30 px-2 py-1 rounded text-xs border border-accent text-textmuted">HTML/CSS</span>
+                            <span class="bg-accent/30 px-2 py-1 rounded text-xs border border-accent text-textmuted">LocalStorage</span>
+                            <span class="bg-accent/30 px-2 py-1 rounded text-xs border border-accent text-textmuted">jsPDF</span>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="flex gap-4 mt-auto pt-4 border-t border-highlight/20">
+                            <!--link dyal lwebsit -->
+                            <a href="https://sofia888u.github.io/nova-task/" target="_blank" class="flex-1 flex items-center justify-center gap-2 py-2 bg-accent hover:bg-highlight text-white rounded-lg font-medium transition-all text-sm shadow-md hover:-translate-y-1">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <!-- github link dyal l code -->
+                            <a href="https://github.com/Sofia888u/nova-task" target="_blank" class="flex-1 flex items-center justify-center gap-2 py-2 bg-transparent border border-highlight hover:bg-cardbg text-white rounded-lg font-medium transition-all text-sm hover:-translate-y-1">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coming Soon Placeholder Card bach iji mtwazn -->
+                <div class="glass-card rounded-2xl p-6 fade-in-up border-dashed border-2 border-highlight/30 flex flex-col items-center justify-center text-center opacity-60 hover:opacity-100 transition-opacity h-full min-h-[400px]">
+                    <div class="w-16 h-16 rounded-full bg-darkbg border border-highlight flex items-center justify-center text-2xl mb-4 text-highlight">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-textmain mb-2">More Projects Coming Soon</h4>
+                    <p class="text-sm text-textmuted max-w-[200px]">Currently brewing some code and coffee. Stay tuned!</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 px-6 border-t border-highlight/10">
+        <div class="max-w-5xl mx-auto">
+            <h3 class="text-3xl font-bold mb-12 text-center text-textmain fade-in-up flex items-center justify-center gap-3">
+                <i class="fas fa-graduation-cap text-highlight"></i> Academic Formation
+            </h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="glass-card p-8 rounded-2xl fade-in-up">
+                    <div class="flex justify-between items-start mb-4">
+                        <h4 class="text-xl font-semibold text-textmain">DUT, Data Engineering & AI</h4>
+                        <span class="px-3 py-1 bg-accent text-xs rounded-full font-medium">2024</span>
+                    </div>
+                    <p class="text-textmuted flex items-center gap-2 mb-2">
+                        <i class="fas fa-university text-highlight"></i> EST Beni Mellal
+                    </p>
+                    <p class="text-sm text-textmuted mt-4">Focused on data structures, algorithms, and fundamental AI concepts. Currently seeking an observation internship.</p>
+                </div>
+                
+                <div class="glass-card p-8 rounded-2xl fade-in-up" style="transition-delay: 100ms;">
+                    <div class="flex justify-between items-start mb-4">
+                        <h4 class="text-xl font-semibold text-textmain">Baccalaureate in Physical Sciences</h4>
+                        <span class="px-3 py-1 bg-darkbg border border-highlight text-xs rounded-full font-medium">2023</span>
+                    </div>
+                    <p class="text-textmuted flex items-center gap-2">
+                        <i class="fas fa-school text-highlight"></i> Imilchil High School
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-20 px-6 border-t border-highlight/10 bg-[#251f38]/30">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-3xl font-bold mb-10 text-center text-textmain fade-in-up flex items-center justify-center gap-3">
+                <i class="fas fa-certificate text-highlight"></i> Certifications & Activities
+            </h3>
+            
+            <div class="flex flex-col gap-5">
+                <!-- Cert 1 -->
+                <div class="glass-card glass-card-list p-4 md:p-5 rounded-2xl flex items-center justify-between fade-in-up group cursor-pointer" onclick="openModal('CyphX-cert.jpg.png')">
+                    <div class="flex items-center gap-4 md:gap-6">
+                        <div class="w-14 h-14 rounded-xl bg-[#1a1726] border border-highlight/40 flex items-center justify-center shrink-0 shadow-inner">
+                            <i class="fas fa-code text-yearcol text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-base md:text-lg font-bold text-textmain mb-1 group-hover:text-yearcol transition-colors">CypherCamp — Web Development Program</h4>
+                            <p class="text-xs md:text-sm text-textmuted">Programme de 4 mois · HTML, CSS, JavaScript, React.js</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 md:gap-6 shrink-0">
+                        <span class="text-xs md:text-sm tracking-widest text-yearcol font-medium hidden sm:block">2026</span>
+                        <div class="w-20 h-12 md:w-24 md:h-14 rounded overflow-hidden border border-highlight/50 shrink-0 shadow-md bg-white">
+                            <img src="CyphX-cert.jpg.png" alt="CypherCamp" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='https://via.placeholder.com/200x120/1E1C2F/3E0866?text=Image'">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cert 2 -->
+                <div class="glass-card glass-card-list p-4 md:p-5 rounded-2xl flex items-center justify-between fade-in-up group cursor-pointer" style="transition-delay: 100ms;" onclick="openModal('DigiGirlz-cert.jpg.png')">
+                    <div class="flex items-center gap-4 md:gap-6">
+                        <div class="w-14 h-14 rounded-xl bg-[#1a1726] border border-highlight/40 flex items-center justify-center shrink-0 shadow-inner">
+                            <i class="fas fa-seedling text-pink-400 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-base md:text-lg font-bold text-textmain mb-1 group-hover:text-pink-400 transition-colors">DigiGirlz Mentorship — Microsoft</h4>
+                            <p class="text-xs md:text-sm text-textmuted">Technology for Good · AI & Data Science · 9ème Édition</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 md:gap-6 shrink-0">
+                        <span class="text-xs md:text-sm tracking-widest text-yearcol font-medium hidden sm:block">2026</span>
+                        <div class="w-20 h-12 md:w-24 md:h-14 rounded overflow-hidden border border-highlight/50 shrink-0 shadow-md bg-white">
+                            <img src="DigiGirlz-cert.jpg.png" alt="DigiGirlz" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='https://via.placeholder.com/200x120/1E1C2F/3E0866?text=Image'">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cert 3 -->
+                <div class="glass-card glass-card-list p-4 md:p-5 rounded-2xl flex items-center justify-between fade-in-up group cursor-pointer" style="transition-delay: 200ms;" onclick="openModal('corex-cert.jpg.jpeg')">
+                    <div class="flex items-center gap-4 md:gap-6">
+                        <div class="w-14 h-14 rounded-xl bg-[#1a1726] border border-highlight/40 flex items-center justify-center shrink-0 shadow-inner relative">
+                            <i class="fas fa-shield-alt text-[#c084fc] text-2xl absolute"></i>
+                            <i class="fas fa-lock text-white text-[10px] z-10 absolute mt-[2px]"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-base md:text-lg font-bold text-textmain mb-1 group-hover:text-[#c084fc] transition-colors">C0REX ORIGINS</h4>
+                            <p class="text-xs md:text-sm text-textmuted">CTF Technical Challenges · EST Beni Mellal · 1ère Édition</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 md:gap-6 shrink-0">
+                        <span class="text-xs md:text-sm tracking-widest text-yearcol font-medium hidden sm:block">2026</span>
+                        <div class="w-20 h-12 md:w-24 md:h-14 rounded overflow-hidden border border-highlight/50 shrink-0 shadow-md bg-white">
+                            <img src="corex-cert.jpg.jpeg" alt="C0REX" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='https://via.placeholder.com/200x120/1E1C2F/3E0866?text=Image'">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cert 4 -->
+                <div class="glass-card glass-card-list p-4 md:p-5 rounded-2xl flex items-center justify-between fade-in-up group cursor-pointer" style="transition-delay: 300ms;" onclick="openModal('microsoft-cert.jpg.png')">
+                    <div class="flex items-center gap-4 md:gap-6">
+                        <div class="w-14 h-14 rounded-xl bg-[#1a1726] border border-highlight/40 flex items-center justify-center shrink-0 shadow-inner">
+                            <div class="grid grid-cols-2 gap-[2px] w-5 h-5">
+                                <div class="bg-[#F25022] rounded-sm"></div>
+                                <div class="bg-[#7FBA00] rounded-sm"></div>
+                                <div class="bg-[#00A4EF] rounded-sm"></div>
+                                <div class="bg-[#FFB900] rounded-sm"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-base md:text-lg font-bold text-textmain mb-1 group-hover:text-[#00A4EF] transition-colors">Microsoft TechDay — 4ème Édition</h4>
+                            <p class="text-xs md:text-sm text-textmuted">ENSA Beni Mellal · Morocco Microsoft Community</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 md:gap-6 shrink-0">
+                        <span class="text-xs md:text-sm tracking-widest text-yearcol font-medium hidden sm:block">2026</span>
+                        <div class="w-20 h-12 md:w-24 md:h-14 rounded overflow-hidden border border-highlight/50 shrink-0 shadow-md bg-white">
+                            <img src="microsoft-cert.jpg.png" alt="Microsoft" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='https://via.placeholder.com/200x120/1E1C2F/3E0866?text=Image'">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal / Lightbox -->
+    <div id="imageModal" class="fixed inset-0 z-[100] bg-black/90 hidden items-center justify-center p-4 md:p-10 opacity-0 transition-opacity duration-300" onclick="closeModal()">
+        <button class="absolute top-6 right-6 md:top-10 md:right-10 text-white hover:text-highlight text-4xl font-bold transition-colors" onclick="closeModal()">&times;</button>
+        <img id="modalImage" src="" alt="Certificate Full View" class="max-w-full max-h-full rounded-lg shadow-2xl border-2 border-highlight/50" onclick="event.stopPropagation()">
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 relative border-t border-highlight/10">
+        <div class="max-w-4xl mx-auto text-center fade-in-up">
+            <h3 class="text-3xl font-bold mb-6 text-textmain">Get In Touch</h3>
+            <p class="text-textmuted mb-10 max-w-xl mx-auto">
+                I am eager to contribute my energy and passion for data and technology to your team. Whether you have an observation internship opportunity or would like to discuss potential collaborations, please feel free to reach out. I look forward to hearing from you!
+            </p>
+            
+            <div class="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-12 mb-12">
+                <a href="mailto:oulhajsaphya@gmail.com" class="flex items-center gap-3 hover:text-yearcol transition-colors group">
+                    <div class="w-12 h-12 rounded-full bg-darkbg border border-highlight group-hover:border-yearcol flex items-center justify-center text-xl shadow-lg transition-colors">
+                        <i class="fas fa-envelope text-highlight group-hover:text-yearcol transition-colors"></i>
+                    </div>
+                    <span class="text-sm md:text-base">oulhajsaphya@gmail.com</span>
+                </a>
+                <a href="tel:0610892403" class="flex items-center gap-3 hover:text-yearcol transition-colors group">
+                    <div class="w-12 h-12 rounded-full bg-darkbg border border-highlight group-hover:border-yearcol flex items-center justify-center text-xl shadow-lg transition-colors">
+                        <i class="fas fa-phone text-highlight group-hover:text-yearcol transition-colors"></i>
+                    </div>
+                    <span class="text-sm md:text-base">0610892403</span>
+                </a>
+                <div class="flex items-center gap-3 text-textmuted">
+                    <div class="w-12 h-12 rounded-full bg-darkbg border border-highlight flex items-center justify-center text-xl shadow-lg">
+                        <i class="fas fa-map-marker-alt text-highlight"></i>
+                    </div>
+                    <span class="text-sm md:text-base">Beni Mellal / Morocco</span>
+                </div>
+            </div>
+
+            <!-- Social Links -->
+            
+            <div class="flex justify-center gap-6 border-t border-highlight/30 pt-10">
+            <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/saphya-oulhaj/" class="w-14 h-14 rounded-full bg-darkbg border border-highlight flex items-center justify-center text-2xl hover:bg-accent hover:border-accent hover:scale-110 transition-all duration-300 shadow-lg">
+                    <i class="fab fa-linkedin-in text-white"></i>
+                </a>
+            <!-- GitHub -->
+                <a href="https://github.com/Sofia888u" class="w-14 h-14 rounded-full bg-darkbg border border-highlight flex items-center justify-center text-2xl hover:bg-accent hover:border-accent hover:scale-110 transition-all duration-300 shadow-lg">
+                    <i class="fab fa-github text-white"></i>
+                </a>
+            <!-- Kaggle -->
+                <a href="https://www.kaggle.com/saphyaoulhaj" class="w-14 h-14 rounded-full bg-darkbg border border-highlight flex items-center justify-center text-2xl hover:bg-[#20BEFF] hover:border-[#20BEFF] hover:scale-110 transition-all duration-300 shadow-lg" title="Kaggle">
+                <i class="fab fa-kaggle text-white"></i>
+                </a>
+
+            <!-- Hugging Face -->
+                <a href="https://huggingface.co/SAPHYA" class="w-14 h-14 rounded-full bg-darkbg border border-highlight flex items-center justify-center text-2xl hover:bg-[#FFD21E] hover:border-[#FFD21E] hover:scale-110 transition-all duration-300 shadow-lg" title="Hugging Face">
+                <span>🤗</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#171524] py-6 text-center text-sm text-textmuted border-t border-highlight/20">
+        <p>&copy; 2026 Saphya Oulhaj. Designed with <i class="fas fa-heart text-highlight"></i> & Code.</p>
+    </footer>
+
+    <!-- Fichier JS -->
+    <script src="script.js"></script>
+</body>
+</html>

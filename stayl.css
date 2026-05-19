@@ -1,0 +1,61 @@
+/* Dark Navy/Purple Background */
+body {
+    background-color: #1E1C2F !important; /* Had اللون howa #1E1C2F dyal tsawer dyalk li 3ajbinak */
+    color: #F8FAFC;
+    overflow-x: hidden;
+}
+
+/* Glassmorphism Cards: loun shwia fate7 (#2D1E36) bach yfrz 3la background */
+.glass-card {
+    background: rgba(45, 30, 54, 0.4); 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(80, 26, 94, 0.4); /* #501A5E transparent */
+    transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(62, 8, 102, 0.5); /* Shadow d-accent */
+    border-color: rgba(80, 26, 94, 0.9);
+    background: rgba(45, 30, 54, 0.7);
+}
+
+/* L-hover dial list Certificates (shadow d-accent #3E0866) */
+.glass-card-list:hover {
+    background: rgba(62, 8, 102, 0.2); 
+    border-color: rgba(167, 139, 250, 0.5); /* Tswira light purple border */
+}
+
+/* Gradient l-smiya (men byad nase3 l purple fate7) */
+.text-gradient {
+    background: linear-gradient(to right, #FDFBFB, #a78bfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Scroll Animations Classes */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Custom Scrollbar bel Alwan dyalek */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #1E1C2F;
+}
+::-webkit-scrollbar-thumb {
+    background: #3E0866;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #501A5E;
+}
