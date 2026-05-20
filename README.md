@@ -30,6 +30,6 @@ Check out the live website here: **[https://sofia888u.github.io/PORTFOLIO/](http
 ## 📫 Let's Connect!
 I am actively seeking an observation internship. If you have an opportunity or just want to connect, feel free to reach out:
 
-*   **Email:** [hadi_email_dyalk_hna@gmail.com](mailto:hadi_email_dyalk_hna@gmail.com)
+*   **Email:** [oulhajsaphya@gmail.com](mailto:hadi_email_dyalk_hna@gmail.com)
 *   **LinkedIn:** [Saphya Oulhaj - LinkedIn](https://www.linkedin.com/in/ton_lien_ici)
 *   **GitHub:** [@sofia888u](https://github.com/sofia888u)
