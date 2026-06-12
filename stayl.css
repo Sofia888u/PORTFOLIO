@@ -63,30 +63,29 @@ body {
 /* ========================================= */
 /* CSS DYAL LES BOUTONS (LET'S CONNECT + CV) */
 /* ========================================= */
-
-/* Bach njm3o les boutons b jouj f sater wa7ed */
-.buttons-group {
-    display: flex;
-    gap: 15px; 
-    align-items: center;
-    margin-top: 25px;
-}
-
-/* Design dyal bouton dyal l-CV */
+/* Design dyal bouton dyal l-CV bohdo */
 .btn-cv {
     display: inline-block;
-    padding: 10px 25px;
-    background-color: transparent; 
-    color: #a855f7; /* Loun fate7 mn l-palette dyalk */
-    border: 2px solid #501A5E; /* l-border b nfs loun d les cards */
+    margin-top: 25px; /* Tissa3 bin l-ktaba w l-bouton */
+    padding: 12px 30px; /* Kbertou chwya bach yban zwin */
+    background-color: #3E0866; /* Loun l-mouve mghlou9 */
+    color: #F8FAFC; /* Ktaba bida */
+    border: 2px solid #a78bfa; /* khat f jnab b l-mouve fate7 */
     border-radius: 30px; 
     font-weight: 600;
-    font-size: 15px;
+    font-size: 16px;
     text-decoration: none;
     transition: all 0.3s ease;
     cursor: pointer;
 }
 
+/* Mli kadozi la souris (Hover) */
+.btn-cv:hover {
+    background-color: transparent; 
+    color: #a855f7; 
+    border-color: #501A5E; 
+    box-shadow: 0 5px 15px rgba(62, 8, 102, 0.4); 
+}
 /* Mli kadozi la souris (Hover) 3la bouton l-CV */
 .btn-cv:hover {
     background-color: #3E0866; /* loun dial scrollbar thumb */
